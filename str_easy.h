@@ -1,7 +1,7 @@
-#ifndef STRING_H_INCLUDED
-#define STRING_H_INCLUDED
+#ifndef STR_EASY_H_INCLUDED
+#define STR_EASY_H_INCLUDED
 #include <string>
-#include "string.h"
+#include "str_easy.h"
 using namespace std;
 
 string itc_hello_str(string name); // 1
