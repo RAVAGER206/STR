@@ -4,7 +4,7 @@
 using namespace std;
 
 string itc_hello_str(string name){ // 1
-return ("Hello,"+ name);
+return ("Hello, " + name);
 } // end
 
 
