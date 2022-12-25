@@ -6,12 +6,11 @@ using namespace std;
 string itc_even_place(string n){ // 6
 string l, m;
 m = "-1";
-for (int i = 0; n[i] != '\0'; i++)
+for (int m = 0; n[i] != '\0'; i++)
 if (n[i] % 2 == 0)
 l = l + n[i];
 if (itc_len(l) == 0)
 return m;
-return l;
 } // end
 
 
@@ -48,8 +47,6 @@ string itc_slice_str(string n, int z, int v){ // 9
 string m;
 int i;
 if (z < v){
-while (i != z)
-i = i + 1;
 for (i; i <= v; i++)
 m = m + n[i];
 }
