@@ -33,12 +33,7 @@ k = 0;
 for (i = 0; s1[i] != '\0'; i++){
 if (s1[i] == s2[l]){
 o = o + s1[i];
-k = k + 1;
 l++;
-}
-else{
-o = "\0";
-l = 0;
 }
 if (o == s2)
 return i - (k - 1);
