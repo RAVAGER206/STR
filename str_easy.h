@@ -4,13 +4,14 @@
 #include "str_easy.h"
 using namespace std;
 
-string itc_hello_str(string n); 
 
 long long itc_len(string n); 
 
 int itc_count_char_in_str(char b, string n);
 
 string itc_even_place(string n); 
+
+string itc_hello_str(string n); 
 
 double itc_percent_lower_uppercase(string n); 
 
