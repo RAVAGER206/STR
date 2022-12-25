@@ -41,23 +41,3 @@ return i - (k - 1);
 return -1;
 } // end
 
-
-string itc_three_str(string s1, string s2, string s3){ // 13
-string sp, sv;
-int l;
-l = 0;
-for (int i = 0; s1[i] != '\0'; i++){
-if (s1[i] == s2[l]){
-sp = sp + s1[i];
-l++;
-if (sp == s2)
-sv = sv + s3;
-}
-else{
-sv = sv + s1[i - l];
-l = 0;
-i = i - (l - 1);
-}
-}
-return sv;
-} // end
