@@ -3,66 +3,66 @@
 #include "str_easy.h"
 using namespace std;
 
-string itc_even_place(string n){ // 6
-string l, m;
-m = "-1";
-for (int i = 0; n[i] != '\0'; i++)
-if (n[i] % 2 == 0)
-l = l + n[i];
-if (itc_len(l) == 0)
-return m;
-return l;
+
+string itc_cmp_str(string n, string m, int u){ // 11
+string o;
+int i, l, d;
+d = itc_len(n);
+if (m[0] == '\0')
+return n;
+for (i = 0; i < u; i++)
+o = o + n[i];
+for (l = 0; m[l] != '\0'; l++)
+if (i < d){
+o = o + m[l];
+i++;
+}
+if (i <= d)
+for (i; n[i] !='\0'; i++)
+o = o + n[i];
+return o;
 } // end
 
 
-double itc_percent_lower_uppercase(string n){ // 7
-double s, l;
-s = 0;
+int itc_find_str(string s1, string s2){ // 12
+int i, l, k;
+string o;
+i = 0;
 l = 0;
-for (int i = 0; n[i] != '\0'; i++){
-if (n[i] >= 65 && n[i] <= 90){
-s = s + 1;
+k = 0;
+for (i = 0; s1[i] != '\0'; i++){
+if (s1[i] == s2[l]){
+o = o + s1[i];
+k = k + 1;
+l++;
 }
-if (n[i] >= 97 && n[i] <= 119){
-l = l + 1;
+else{
+o = "\0";
+l = 0;
 }
+if (o == s2)
+return i - (k - 1);
 }
-if (s > l)
-return (l/s)*100;
-return (s/l)*100;
+return -1;
 } // end
 
 
-string itc_reverse_str(string n){ // 8
-string l;
-int len;
-len = itc_len(n);
-for (int i = len-1; i != 0; i--)
-l = l + n[i];
-l = l + n[0];
-return l;
-} // end
-
-
-string itc_slice_str(string n, int z, int v){ // 9
-string m;
-int i;
-if (z < v){
-while (i != z)
-i = i + 1;
-for (i; i <= v; i++)
-m = m + n[i];
+string itc_three_str(string s1, string s2, string s3){ // 13
+string sp, sv;
+int l;
+l = 0;
+for (int i = 0; s1[i] != '\0'; i++){
+if (s1[i] == s2[l]){
+sp = sp + s1[i];
+l++;
+if (sp == s2)
+sv = sv + s3;
 }
-else
-m = "0";
-return m;
-} // end
-
-
-bool itc_equal_reverse(string n){ // 10
-string l;
-l = itc_reverse_str(n);
-if (l == n)
-return 1;
-return 0;
+else{
+sv = sv + s1[i - l];
+l = 0;
+i = i - (l - 1);
+}
+}
+return sv;
 } // end
