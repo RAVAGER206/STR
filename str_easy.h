@@ -4,15 +4,29 @@
 #include "str_easy.h"
 using namespace std;
 
-string itc_hello_str(string name); // 1
+string itc_hello_str(string n); 
 
-long long itc_len(string str); // 2
+long long itc_len(string n); 
 
-void itc_print_copy_str(string str, int a); // 3
+void itc_print_copy_str(string n, int a); 
 
-void itc_first_end_three(string str); // 4
+void itc_first_end_three(string n); 
 
-int itc_count_char_in_str(char ch, string str); // 5
+int itc_count_char_in_str(char b, string n);
 
-#endif // STRING_H_INCLUDED
+string itc_even_place(string n); 
 
+double itc_percent_lower_uppercase(string n); 
+
+string itc_reverse_str(string n);
+
+string itc_slice_str(string n, int z, int v); 
+
+bool itc_equal_reverse(string n); 
+
+string itc_cmp_str(string n, string m, int u); 
+
+int itc_find_str(string s1, string s2);
+
+string itc_three_str(string s1, string s2, string s3);
+  
