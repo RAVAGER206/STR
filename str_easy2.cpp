@@ -45,9 +45,8 @@ return l;
 } // end
 
 
-string itc_slice_str(string n, int z, int v){
+string itc_slice_str(string n, int z, int v){ // 9
 string m;
-int i;
 if (z < v){
 while (i != z)
 i = i + 1;
