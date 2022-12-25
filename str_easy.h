@@ -26,7 +26,5 @@ void itc_first_end_three(string n);
 string itc_cmp_str(string n, string m, int u); 
 
 int itc_find_str(string s1, string s2);
-
-string itc_three_str(string s1, string s2, string s3);
   
 void itc_print_copy_str(string n, int a);
