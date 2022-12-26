@@ -7,11 +7,11 @@ using namespace std;
 
 string itc_hello_str(string n);
 
-long long itc_len(string n); 
+long long itc_len(string n);
 
-void itc_print_copy_str(string n, int a);
+void itc_print_copy_str(string n, int a); 
 
-void itc_first_end_three(string n); 
+void itc_first_end_three(string n);
 
 int itc_count_char_in_str(char b, string n); 
 
@@ -29,5 +29,8 @@ string itc_cmp_str(string n, string m, int u);
 
 int itc_find_str (string s1, string s2); 
 
+string itc_three_str (string s1, string s2, string s3);
+
+int itc_max_char_on_end(string n);
 
 #endif // STREASY_H_INCLUDED
