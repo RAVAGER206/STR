@@ -34,15 +34,16 @@ return (s/l)*100;
 } // end
 
 
-string itc_reverse_str(string n){ // 8
+string itc_reverse_str(string n){
 string l;
 int len;
 len = itc_len(n);
-for (int i = len-1; i != 0; i--)
+l = "";
+for (int i = len - 1; i >= 0; i--)
 l = l + n[i];
-l = l + n[0] + "/0";
+l = l + "\0";
 return l;
-} // end
+}
 
 
 string itc_slice_str(string n, int z, int v){ // 9
