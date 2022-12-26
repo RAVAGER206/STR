@@ -48,10 +48,11 @@ return l;
 string itc_slice_str(string n, int z, int v){ // 9
 string m;
 int i;
+m = "\0";
 if (z < v){
 while (i < z)
 i = i + 1;
-for (i; i < v; i++)
+for (i; i <= v && n[i] != '\0'; i++)
 m = m + n[i];
 }
 else
