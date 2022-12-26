@@ -13,7 +13,7 @@ l = l + n[i];
 if (itc_len(l) == 0)
 return m;
 return l;
-}
+} // end
 
 
 double itc_percent_lower_uppercase(string n){ // 7
@@ -34,7 +34,7 @@ return (s/l)*100;
 } // end
 
 
-string itc_reverse_str(string n){
+string itc_reverse_str(string n){ // 8
 string l;
 int len;
 len = itc_len(n);
@@ -43,7 +43,7 @@ for (int i = len - 1; i >= 0; i--)
 l = l + n[i];
 l = l + "\0";
 return l;
-}
+} // end
 
 
 string itc_slice_str(string n, int z, int v){ // 9
