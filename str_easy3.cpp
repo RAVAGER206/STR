@@ -70,7 +70,7 @@ return sv;
 } // end
 
 
-int itc_max_char_on_end(string n){
+int itc_max_char_on_end(string n){  // 14
 char z;
 int i, g, g1;
 z = '/';
@@ -85,4 +85,4 @@ else
 g = 0;
 }
 return g1 - 63;
-}
+} // end
