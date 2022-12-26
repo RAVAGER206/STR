@@ -47,16 +47,17 @@ return l;
 
 string itc_slice_str(string n, int z, int v){ // 9
 string m;
+int i;
 if (z < v){
-while (i != z)
+while (i < z)
 i = i + 1;
-for (i; i <= v; i++)
+for (i; i < v; i++)
 m = m + n[i];
 }
 else
-m = "0";
+return n;
 return m;
-}
+} // end
 
 
 bool itc_equal_reverse(string n){ // 10
