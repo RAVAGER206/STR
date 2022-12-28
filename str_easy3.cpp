@@ -70,13 +70,13 @@ return sv;
 } // end
 
 
-int itc_max_char_on_end(string n){  // 14
+int itc_max_char_on_end(string n){ // 14
 char z;
 int i, g, g1;
 z = '/';
 for (i = 0; n[i] != '\0'; i++){
 z = n[i];
-if (z > 47 && z < 58){
+if (z > 47 && z < 58 && (n[i+1] == n[i] || n[i] == n[i-1])){
 g++;
 if (g >= g1)
 g1 = g;
@@ -84,5 +84,5 @@ g1 = g;
 else
 g = 0;
 }
-return g1 - 63;
+return g1 - 3;
 } // end
