@@ -4,24 +4,25 @@
 using namespace std;
 
 
-string itc_cmp_str(string n, string m, int u){ // 11
-string o;
-int i, l, d;
-d = itc_len(n);
-if (m[0] == '\0')
-return n;
-for (i = 0; i < u; i++)
-o = o + n[i];
-for (l = 0; m[l] != '\0'; l++)
-if (i < d){
-o = o + m[l];
-i++;
+string itc_cmp_str(string str1, string str2, int num){ // 11
+string q = "";
+string b;
+long long (c = itc_len(str1); g = itc_len(str2); a)
+for(a = 0; a < num; a++){
+q += str1[a];
 }
-if (i <= d)
-for (i; n[i] !='\0'; i++)
-o = o + n[i];
-return o;
+for(a = 0; a < g; a++){
+q += str2[a];
+}
+for(a = num; a < c; a++){
+q += str1[a];
+}
+for(a = 0; a < c; a++){
+b += q[a];
+}
+return b;
 } // end
+
 
 
 int itc_find_str (string s1, string s2){ // 12
