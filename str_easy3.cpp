@@ -7,9 +7,8 @@ using namespace std;
 string itc_cmp_str(string n, string m, int u){ // 11
 string o;
 int i, l, d;
-o = "";
 d = itc_len(n);
-if (m == "")
+if (m[0] == '\0')
 return n;
 for (i = 0; i < u; i++)
 o = o + n[i];
